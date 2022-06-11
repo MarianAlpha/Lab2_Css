@@ -1,0 +1,56 @@
+* {
+    border: 1px solid black;
+}
+
+h1 {
+    text-align: center;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+section {
+    border-color: aqua;
+    border-style: double;
+    border-width: 2px;
+    font-size: 23px;
+    padding: 20px;
+}
+
+#p1 {
+    /*
+    propiedad-opciones
+    border-lado-propiedad
+    propiedad-lado
+    */
+    border-width: 1px; /*Ancho del borde */ 
+    border-top-width: 5px; 
+    border-left-color:red ;
+    border-bottom-style: dotted;
+
+    border-width: thin; /*Todo // border-width: 10px 1px 2px 2px; Top, der bot izq*/
+    font-size: 2em; /*referencia del elemento que me contiene section*/
+    padding: 30px;
+    width: 300px; /*Lo que mide el contenido de la caja tipo content-box*/
+    margin: 100px;
+}
+
+#p2 {
+    border: inherit; /*Para heredar la propiedad de section*/
+    width: 50%;
+    margin: 10%;
+    min-width: 100px; /*minimo valor que puede tomar*/
+}
+
+#p3 {
+    width: 50%;
+    margin-left: auto; /*centra*/
+    margin-right: auto;
+}
+
+/*Las margenes no se suman, se superponen
+
+li a {
+    margin: 100px; } No funciona
+*/

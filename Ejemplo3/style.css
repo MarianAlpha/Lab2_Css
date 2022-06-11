@@ -1,0 +1,47 @@
+* {
+    border: 1px dotted black;
+    box-sizing: border-box; /*para tener en cuenta el padding*/
+}
+
+nav {
+    width: 20%;
+    float: left;
+    min-width: 150px;
+    margin-top: 1%;
+}
+
+li {
+    margin: 5px;
+}
+
+section {
+    width: 58%;
+    float: left;
+    padding: 20px;
+    margin: 2px;
+    background-color: blueviolet;
+}
+
+article.right {
+    width: 49%; 
+    float: right;
+    padding: 5px;
+}
+
+article.left {
+    width: 49%;
+    float: left;
+    padding: 5px;
+}
+
+img
+
+aside {
+    width: 20%;
+    float: right;
+    margin-top: 1;
+}
+
+div.clear {
+    clear: both; /*que no haya elementos abajo*/
+}
