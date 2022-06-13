@@ -1,0 +1,121 @@
+* {
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    padding: 10px;
+    background-color: #DDDDDD;
+}
+
+header {
+    padding: 30px;
+    background-color: #00a0a0;
+    background-image: url(../fondo.jpg);
+    text-align: center;
+}
+
+h1,header h2 {
+    color: white;
+    font-size: 2em;
+    text-shadow: 10px 10px 3px black; /*Dimenciones de la sombra, que tam grande es la sombra, difuminado (al lado, abajo)*/
+
+}
+
+nav li {
+    background-color: #DDDDDD;
+    display: inline-block;
+    list-style: none;
+    width: 100px;
+}
+
+nav li:hover {
+    background-color: red;
+    font-weight: bold;
+    color: black;
+}
+
+.active { /*Se agranda donde esta*/
+    font-size: 1.5em;
+}
+
+img {
+    display: block;
+    width: 30%;
+    box-shadow: 5px 5px 5px gray;
+    margin: auto;
+    border-radius: 20%;
+}
+
+.img-circle {
+    border-radius: 50%;
+    width: 70%;
+    filter: grayscale(100%);
+    transition: 2s;  /*Se pone antes de la transicion*/
+}
+
+.img-circle:hover {
+    zoom: 3.2;
+    transform: rotate(30deg);
+}
+
+p.rip {
+    text-align: center;
+}
+
+section {
+    float: left;
+    width: 75%;
+}
+
+aside {
+    float: right;
+    width: 24%;
+}
+
+.float-4 { /*4 columnas de 25%*/
+    float: left;
+    width: 25%;
+}
+
+.float-2 { /*4 columnas de 25%*/
+    float: left;
+    width: 50%;
+}
+
+.div-clear {
+    clear: both;
+}
+
+p::first-line {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+p::first-letter {
+    font-size: 2em;
+}
+
+p:hover { /*si pasa el mouse*/
+    background-color: #BBF9E9; 
+}
+
+
+@media screen and (max-width: 700px){
+    p.float-2 {
+        width: 100%;
+    }
+
+    section {
+        width: 100%;
+    }
+    
+    aside {
+        width: 100%;
+    }
+}
+
+
+
+
