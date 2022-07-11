@@ -1,0 +1,14 @@
+.bg-green-udea {
+  background-color: #275e40;
+}
+.carousel-inner img {
+  width: 100%;
+}
+.carousel-caption h3 {
+  text-shadow: 5px 5px 5px black;
+  font-size: 3em;
+}
+
+.text-udea {
+  color: #2e523d;
+}

@@ -1,0 +1,448 @@
+* {
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+
+header {
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to left, #2a9c8d, #d4eeea, #84a2cf);
+}
+
+h3,
+h2 {
+  text-align: center;
+  color: #2f2a34;
+  text-shadow: 1px 2px 2px black;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: bold;
+  color: #2f2a34;
+  text-shadow: 3px 3px 5px black;
+}
+
+h4 {
+  color: gray;
+}
+
+header img.foto {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  box-shadow: 5px 5px 5px gray;
+  transition: 2s; /*Se pone antes de la transicion*/
+}
+
+.foto:hover {
+  zoom: 1.2;
+  transform: rotate(30deg);
+}
+
+header figure {
+  float: left;
+}
+
+header .cabecera {
+  float: center;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: inline;
+  padding-left: 0;
+}
+
+nav li {
+  display: inline-block;
+  list-style: none;
+}
+
+nav li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #2f2a34;
+  padding: 10px;
+  width: 150px;
+}
+
+nav li a:hover {
+  background-color: #2f2a34;
+  color: white;
+  border-radius: 4px;
+}
+
+div.clear {
+  clear: both; /*que no haya elementos abajo*/
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  background-color: rgb(236, 243, 248);
+}
+
+aside.aside1 {
+  float: left;
+  width: 17%;
+  padding: 10px;
+}
+
+aside.aside1 p {
+  padding-bottom: 30px;
+  border-bottom: 0.5px #d1bfe4 ridge;
+}
+
+.aside1 h4 {
+  background-color: #2f2a34;
+  color: #ffffff;
+  border-radius: 4px;
+  text-align: center;
+  border: none;
+  padding: 7px;
+  width: 90%;
+}
+
+.aside1 h4 a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+section.principal {
+  float: left;
+  width: 60%;
+  padding: 10px;
+}
+
+section.principal p {
+  text-align: justify;
+  font-size: 18px;
+}
+
+.principal h2 {
+  text-transform: uppercase;
+}
+
+aside.aside2 {
+  float: right;
+  width: 17%;
+  padding: 10px;
+}
+
+.aside2 ul {
+  list-style-image: url("./Imagenes/vineta.png");
+}
+
+.aside2 ul li {
+  padding: 15px 0 15px 0;
+  border-bottom: 0.5px #d1bfe4 ridge;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #2f2a34;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px;
+  width: 180px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.float-3 {
+  /*4 columnas de 25%*/
+  float: left;
+  width: 33%;
+}
+
+#info aside {
+  padding: 10px;
+}
+
+progress {
+  display: block;
+  margin: 0 0 30px 0;
+  -webkit-appearance: none;
+  border-radius: 5px;
+  border: 1px grey dotted;
+}
+
+::-webkit-progress-value {
+  background-image: -webkit-linear-gradient(
+    -45deg,
+    #2a9c8d,
+    rgb(226, 157, 205),
+    #2a9c8d
+  );
+  border-radius: 4px;
+}
+
+::-webkit-progress-bar {
+  background-color: rgb(232, 243, 247);
+}
+
+#info {
+  background-color: #ffffff;
+}
+
+#info section {
+  padding: 10px;
+}
+
+#info article {
+  padding: 3px;
+}
+
+#info article img {
+  width: 100%;
+  height: 100%;
+  min-width: 150px;
+}
+
+#landing {
+  height: 200px !important;
+}
+
+.listas {
+  width: 100%;
+}
+
+.listas article {
+  align-items: center;
+  justify-content: center;
+}
+
+.listas article button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 50px 25% 0;
+}
+
+table {
+  margin: 0 50px 0 50px;
+  width: 80%;
+  text-align: center;
+  border: 1px solid;
+}
+
+table th,
+td,
+tr {
+  border: 1px solid;
+}
+
+table tr {
+  height: 40px;
+}
+
+table.tableb th {
+  color: white;
+  background: #2f2a34;
+}
+
+table.tableg th {
+  color: white;
+  background-color: #2a9c8d;
+}
+
+.select {
+  display: inline-block;
+  margin-left: auto;
+  border-radius: 4px;
+  background-color: #2a9c8d;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px;
+  width: 180px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.select span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.info {
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 0.5px #2f2a34 ridge;
+  background-color: #ffffff;
+}
+
+article.backg {
+  background-color: #2f2a34;
+}
+
+article.backb {
+  background-color: #2a9c8d;
+}
+
+.info article {
+  text-align: center;
+  color: white;
+}
+
+.info img {
+  display: block;
+  margin-left: 40%;
+  width: 40px;
+}
+
+.container-form {
+  width: 80%;
+  padding-top: 30px;
+  margin: 0 auto;
+}
+
+form.contacto ul {
+  list-style: none;
+}
+
+form.contacto li {
+  padding-bottom: 10px;
+}
+
+form.contacto input {
+  display: block;
+  width: 90%;
+  padding-bottom: 5px;
+}
+
+#check-menu,
+.menu {
+  display: none;
+}
+
+@media screen and (max-width: 1110px) {
+  .proyectos .float-3 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+  #check-menu:checked ~ .cabecera nav {
+    display: block;
+  }
+
+  .cabecera li {
+    display: block;
+    background-color: rgba(234, 234, 234, 0.851);
+  }
+
+  nav {
+    display: none;
+    position: fixed;
+    top: 50px;
+    left: 24px;
+    transition: 1s;
+  }
+
+  .menu {
+    display: block;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+  }
+
+  .img-menu {
+    border-radius: 50%;
+    width: 50px;
+  }
+
+  .img-menu:hover {
+    cursor: pointer;
+    transform: skew(0deg);
+  }
+
+  header {
+    display: block;
+    width: 100%;
+  }
+
+  header figure {
+    float: none;
+    width: 100%;
+    margin-left: 35%;
+  }
+
+  header .cabecera {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .container {
+    display: block;
+  }
+
+  aside.aside1 {
+    float: none;
+    width: 100%;
+  }
+
+  section.principal {
+    float: none;
+    width: 100%;
+  }
+
+  aside.aside2 {
+    float: none;
+    width: 100%;
+  }
+
+  .float-3 {
+    width: 100%;
+    padding-bottom: 50px;
+  }
+
+  
+  progress {
+    width: 100%;
+  }
+
+  .info article {
+    padding: 0;
+  }
+/*   .info article{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    size-adjust: auto;
+  }
+
+  footer .float-3 {
+    float: left; 
+    width: 33%; 
+  }
+
+  .info img {
+    display: block;
+    width: 40px;
+  } */
+
+}

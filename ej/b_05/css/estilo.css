@@ -1,0 +1,7 @@
+.carousel-inner img{
+	width: 100%;
+}
+.carousel-caption h3{
+	text-shadow: 5px 5px 5px black;
+	font-size: 3em;
+}
